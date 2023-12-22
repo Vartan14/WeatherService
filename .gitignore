@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Project files weather-app
+/weather-app/node_modules/
