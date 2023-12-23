@@ -1,9 +1,9 @@
 .weather {
     width: 300px;
-    border-right: 6px;
+    border-radius: 15px;
     box-shadow: 10px -2px 20px 2px rgb(0 0 0 /30%);
     color: white;
-    background-color: #333;
+    background-color: #575457;
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
 }
@@ -31,6 +31,7 @@
 
 .weather-icon {
     width: 100px;
+    height: 100px;
 }
 
 .temperature {

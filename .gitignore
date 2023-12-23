@@ -32,4 +32,6 @@
 *.app
 
 # Project files weather-app
-/weather-app/node_modules/
+
+weather-app/node_modules/
+weather-app/src/config.js
