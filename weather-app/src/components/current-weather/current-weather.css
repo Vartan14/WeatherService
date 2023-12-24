@@ -5,7 +5,7 @@
     color: white;
     background-color: #575457;
     margin: 20px auto 0 auto;
-    padding: 0 20px 20px 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .top, .bottom {
@@ -16,10 +16,10 @@
 
 .city {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1;
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: normal;
 }
 
 .weather-description {
@@ -27,6 +27,7 @@
     font-size: 14px;
     line-height: 1;
     margin: 0;
+    margin-top: 5px;
 }
 
 .weather-icon {
@@ -55,11 +56,12 @@
 .parameter-label {
     text-align: left;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
+    padding-left: 10px;
 }
 
 .parameter-value {
     text-align: right;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
 }
