@@ -1,0 +1,18 @@
+{
+    "location": {
+        "timezone_city": "Asia/Vladivostok",
+        "latitude": 43.1150678,
+        "longitude": 131.8855768
+    },
+    "weather": {
+        "time": "2023-12-26 16:00:00",
+        "desc": "Partially cloudy",
+        "temp": -3.0,
+        "feels_like": -8.7,
+        "pressure": 1022.0,
+        "humidity": 58.5,
+        "clouds": 50.0,
+        "wind_speed": 5.0,
+        "precip_prob": 0.0
+    }
+}

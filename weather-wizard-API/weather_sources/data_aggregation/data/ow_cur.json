@@ -1,0 +1,20 @@
+{
+    "location": {
+        "city": "Bayan",
+        "country_code": "MN",
+        "latitude": 48.44,
+        "longitude": 111
+    },
+    "weather": {
+        "time": "2023-12-26 20:44:03",
+        "condition": "Clouds",
+        "desc": "scattered clouds",
+        "icon_code": "03n",
+        "temp": -22.15,
+        "feels_like": -26.96,
+        "pressure": 1034,
+        "humidity": 97,
+        "clouds": 29,
+        "wind_speed": 1.48
+    }
+}

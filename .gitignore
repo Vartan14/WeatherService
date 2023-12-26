@@ -35,3 +35,9 @@
 
 weather-app/node_modules/
 weather-app/src/config.js
+
+# Project files weather-app
+
+weather-wizard-API/venv/
+weather-wizard-API/.idea
+weather-wizard-APIconfig.py

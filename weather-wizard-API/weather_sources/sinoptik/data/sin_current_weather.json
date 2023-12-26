@@ -1,0 +1,16 @@
+{
+    "location": {
+        "city": "Погода у Києві",
+        "region": "Столиця України"
+    },
+    "weather": {
+        "weather_time": "2:00",
+        "condition": "Хмарно з проясненнями",
+        "temp": 6,
+        "feels_like": 2,
+        "pressure": 982,
+        "humidity": 84,
+        "wind_speed": 4.2,
+        "precip_prob": 4
+    }
+}

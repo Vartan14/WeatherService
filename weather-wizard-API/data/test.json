@@ -1,0 +1,98 @@
+{
+    "queryCost": 1,
+    "latitude": 56.0,
+    "longitude": 45.0,
+    "resolvedAddress": "56.0,45.0",
+    "address": "56.0,45.0",
+    "timezone": "Europe/Moscow",
+    "tzoffset": 3.0,
+    "days": [
+        {
+            "datetime": "2023-12-26",
+            "datetimeEpoch": 1703538000,
+            "tempmax": -2.0,
+            "tempmin": -7.5,
+            "temp": -3.4,
+            "feelslikemax": -2.0,
+            "feelslikemin": -11.6,
+            "feelslike": -5.4,
+            "dew": -4.7,
+            "humidity": 90.7,
+            "precip": 0.6,
+            "precipprob": 100.0,
+            "precipcover": 25.0,
+            "preciptype": [
+                "snow"
+            ],
+            "snow": 0.2,
+            "snowdepth": 21.3,
+            "windgust": 32.8,
+            "windspeed": 10.8,
+            "winddir": 182.2,
+            "pressure": 989.5,
+            "cloudcover": 82.4,
+            "visibility": 7.6,
+            "solarradiation": 19.8,
+            "solarenergy": 1.6,
+            "uvindex": 1.0,
+            "severerisk": 10.0,
+            "sunrise": "08:31:28",
+            "sunriseEpoch": 1703568688,
+            "sunset": "15:29:27",
+            "sunsetEpoch": 1703593767,
+            "moonphase": 0.48,
+            "conditions": "Snow, Partially cloudy",
+            "description": "Partly cloudy throughout the day with snow.",
+            "icon": "snow",
+            "stations": [
+                "UWGG"
+            ],
+            "source": "comb"
+        }
+    ],
+    "stations": {
+        "UWGG": {
+            "distance": 79928.0,
+            "latitude": 56.23,
+            "longitude": 43.78,
+            "useCount": 0,
+            "id": "UWGG",
+            "name": "UWGG",
+            "quality": 50,
+            "contribution": 0.0
+        }
+    },
+    "currentConditions": {
+        "datetime": "20:00:00",
+        "datetimeEpoch": 1703610000,
+        "temp": -3.0,
+        "feelslike": -3.0,
+        "humidity": 100.0,
+        "dew": -3.0,
+        "precip": 0.0,
+        "precipprob": 0.0,
+        "snow": 0.0,
+        "snowdepth": 0.0,
+        "preciptype": null,
+        "windgust": null,
+        "windspeed": 3.6,
+        "winddir": 240.0,
+        "pressure": 992.0,
+        "visibility": 9.0,
+        "cloudcover": 100.0,
+        "solarradiation": 0.0,
+        "solarenergy": 0.0,
+        "uvindex": 0.0,
+        "conditions": "Overcast",
+        "icon": "cloudy",
+        "stations": [
+            "UWGG"
+        ],
+        "source": "obs",
+        "sunrise": "08:31:28",
+        "sunriseEpoch": 1703568688,
+        "sunset": "15:29:27",
+        "sunsetEpoch": 1703593767,
+        "moonphase": 0.48
+    }
+}

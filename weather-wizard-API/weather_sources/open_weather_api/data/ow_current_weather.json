@@ -1,0 +1,20 @@
+{
+    "location": {
+        "city": "Kyiv",
+        "country_code": "UA",
+        "latitude": 50.4333,
+        "longitude": 30.5167
+    },
+    "weather": {
+        "weather_time": "2023-12-25 16:12:39",
+        "condition": "Clouds",
+        "description": "broken clouds",
+        "icon_code": "04n",
+        "temp": 5.32,
+        "feels_like": 1.29,
+        "pressure": 994,
+        "humidity": 100,
+        "clouds": 68,
+        "wind_speed": 6.02
+    }
+}

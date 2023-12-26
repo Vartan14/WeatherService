@@ -1,0 +1,185 @@
+{
+    "location": {
+        "city": "Kyiv",
+        "country_code": "UA",
+        "latitude": 50.43,
+        "longitude": 30.52
+    },
+    "weather_list": [
+        {
+            "date": "2023-12-25",
+            "conditions": "Snow",
+            "description": "rain and snow",
+            "icon": "13d",
+            "temp": {
+                "day": 4.95,
+                "min": -2.6,
+                "max": 6.42,
+                "night": 5.34,
+                "eve": 5.86,
+                "morn": -1.45
+            },
+            "feels_like": {
+                "day": 0.34,
+                "night": 0.9,
+                "eve": 1.88,
+                "morn": -6.84
+            },
+            "pressure": 994,
+            "humidity": 93,
+            "clouds": 100,
+            "wind_speed": 7.49,
+            "precip_prob": 100.0
+        },
+        {
+            "date": "2023-12-26",
+            "conditions": "Rain",
+            "description": "light rain",
+            "icon": "10d",
+            "temp": {
+                "day": 5.46,
+                "min": 3.22,
+                "max": 9.84,
+                "night": 9.26,
+                "eve": 8.18,
+                "morn": 3.68
+            },
+            "feels_like": {
+                "day": 1.75,
+                "night": 5.93,
+                "eve": 4.38,
+                "morn": -1.08
+            },
+            "pressure": 1009,
+            "humidity": 80,
+            "clouds": 82,
+            "wind_speed": 8.18,
+            "precip_prob": 86.0
+        },
+        {
+            "date": "2023-12-27",
+            "conditions": "Rain",
+            "description": "light rain",
+            "icon": "10d",
+            "temp": {
+                "day": 6.29,
+                "min": 1.82,
+                "max": 8.78,
+                "night": 1.82,
+                "eve": 4.17,
+                "morn": 6.61
+            },
+            "feels_like": {
+                "day": 1.82,
+                "night": -2.8,
+                "eve": -0.76,
+                "morn": 2.54
+            },
+            "pressure": 1012,
+            "humidity": 65,
+            "clouds": 92,
+            "wind_speed": 8.55,
+            "precip_prob": 55.00000000000001
+        },
+        {
+            "date": "2023-12-28",
+            "conditions": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d",
+            "temp": {
+                "day": 2.01,
+                "min": -0.1,
+                "max": 3.94,
+                "night": 2.04,
+                "eve": 2.83,
+                "morn": -0.04
+            },
+            "feels_like": {
+                "day": -1.01,
+                "night": -2.02,
+                "eve": -1.28,
+                "morn": -3.41
+            },
+            "pressure": 1026,
+            "humidity": 72,
+            "clouds": 100,
+            "wind_speed": 4.82,
+            "precip_prob": 0.0
+        },
+        {
+            "date": "2023-12-29",
+            "conditions": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d",
+            "temp": {
+                "day": 5.67,
+                "min": 1.93,
+                "max": 7.37,
+                "night": 3.7,
+                "eve": 5.57,
+                "morn": 2.43
+            },
+            "feels_like": {
+                "day": 1.94,
+                "night": 0.3,
+                "eve": 2.46,
+                "morn": -1.14
+            },
+            "pressure": 1015,
+            "humidity": 79,
+            "clouds": 100,
+            "wind_speed": 5.55,
+            "precip_prob": 0.0
+        },
+        {
+            "date": "2023-12-30",
+            "conditions": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d",
+            "temp": {
+                "day": 5.56,
+                "min": 4.07,
+                "max": 6.73,
+                "night": 5.05,
+                "eve": 5.2,
+                "morn": 4.62
+            },
+            "feels_like": {
+                "day": 2.39,
+                "night": 1.13,
+                "eve": 2.17,
+                "morn": 0.69
+            },
+            "pressure": 1017,
+            "humidity": 80,
+            "clouds": 74,
+            "wind_speed": 5.59,
+            "precip_prob": 0.0
+        },
+        {
+            "date": "2023-12-31",
+            "conditions": "Rain",
+            "description": "light rain",
+            "icon": "10d",
+            "temp": {
+                "day": 4.62,
+                "min": 1.32,
+                "max": 5.75,
+                "night": 1.32,
+                "eve": 3.31,
+                "morn": 3.13
+            },
+            "feels_like": {
+                "day": -0.07,
+                "night": -2.52,
+                "eve": -1.67,
+                "morn": -0.72
+            },
+            "pressure": 1005,
+            "humidity": 85,
+            "clouds": 100,
+            "wind_speed": 7.89,
+            "precip_prob": 91.0
+        }
+    ]
+}

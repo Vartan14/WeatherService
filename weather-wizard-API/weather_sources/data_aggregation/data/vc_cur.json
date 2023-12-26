@@ -1,0 +1,18 @@
+{
+    "location": {
+        "timezone_city": "Asia/Ulaanbaatar",
+        "latitude": 48.44,
+        "longitude": 111.0
+    },
+    "weather": {
+        "time": "2023-12-26 20:00:00",
+        "desc": "Overcast",
+        "temp": -18.8,
+        "feels_like": -18.8,
+        "pressure": 1036.0,
+        "humidity": 78.53,
+        "clouds": 100.0,
+        "wind_speed": 0.89,
+        "precip_prob": 0.0
+    }
+}

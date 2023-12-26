@@ -1,0 +1,16 @@
+{
+    "location": {
+        "city": "Погода у Вінниці",
+        "region": "Обласний центр Вінницької області"
+    },
+    "weather": {
+        "time": "17:00",
+        "condition": "Хмарно",
+        "temp": 11,
+        "feels_like": 11,
+        "pressure": 978.42,
+        "humidity": 77,
+        "wind_speed": 5.2,
+        "precip_prob": 23
+    }
+}

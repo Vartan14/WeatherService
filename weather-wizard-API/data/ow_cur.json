@@ -1,0 +1,20 @@
+{
+    "location": {
+        "city": "Nizhny Novgorod Oblast",
+        "country_code": "RU",
+        "latitude": 56,
+        "longitude": 45
+    },
+    "weather": {
+        "time": "2023-12-26 20:56:59",
+        "condition": "Clouds",
+        "desc": "overcast clouds",
+        "icon_code": "04n",
+        "temp": -7.2,
+        "feels_like": -9.74,
+        "pressure": 994,
+        "humidity": 97,
+        "clouds": 99,
+        "wind_speed": 1.39
+    }
+}

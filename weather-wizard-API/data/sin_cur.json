@@ -1,0 +1,16 @@
+{
+    "location": {
+        "city": "Погода у Пекіні",
+        "region": "Столиця Китаю"
+    },
+    "weather": {
+        "time": "2:00",
+        "condition": "Ясно",
+        "temp": -11,
+        "feels_like": -15,
+        "pressure": 1029.08,
+        "humidity": 91,
+        "wind_speed": 2.0,
+        "precip_prob": 0
+    }
+}

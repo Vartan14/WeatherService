@@ -1,0 +1,18 @@
+{
+    "location": {
+        "timezone_city": "Europe/Kiev",
+        "latitude": 50.43,
+        "longitude": 30.52
+    },
+    "weather": {
+        "weather_time": "2023-12-25 15:56:00",
+        "condition": "Overcast",
+        "temp": 6.2,
+        "feels_like": 6.2,
+        "pressure": 996.0,
+        "humidity": 87.1,
+        "clouds": 97.7,
+        "wind_speed": 0.39,
+        "precip_prob": 0.0
+    }
+}
