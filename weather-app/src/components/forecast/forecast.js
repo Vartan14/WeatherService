@@ -29,7 +29,7 @@ const Forecast = ({ data }) => {
     <>
       <span className="title">Daily Forecast</span>
       <Accordion allowZeroExpanded>
-        {data.list.slice(1, 7).map((item, index) => (
+        {data.weather_list.slice(1, 7).map((item, index) => (
           <AccordionItem key={index}>
             <AccordionItemHeading>
               <AccordionItemButton>
@@ -37,10 +37,10 @@ const Forecast = ({ data }) => {
                   <img
                     alt="weather"
                     className="daily-icon"
-                    src={`icons/${item.weather[0].icon}.png`}
+                    src={`icons/${item.icon}.png`}
                   />
                   <span className="day">{forecastDays[index]}</span>
-                  <span className="description">{item.weather[0].description}</span>
+                  <span className="description">{item.condition.split("/")[1]}</span>
                   <span className="min-max-temp">
                     {Math.round(item.temp.min)}°C /{" "}
                     {Math.round(item.temp.max)}°C
@@ -65,11 +65,11 @@ const Forecast = ({ data }) => {
                     </div>
                     <div className="daily-details-grid-item">
                         <span>Wind speed</span>
-                        <span>{item.speed} m/s</span>
+                        <span>{item.wind_speed} m/s</span>
                     </div>
                     <div className="daily-details-grid-item">
                         <span>Precipitation</span>
-                        <span>{Math.round(item.pop * 100)}%</span>
+                        <span>{Math.round(item.precip_prob)}%</span>
                     </div>
                     <div className="daily-details-grid-item">
                         <span>Feels like</span>

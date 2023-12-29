@@ -1,16 +1,16 @@
 {
     "location": {
-        "city": "Погода у Пекіні",
-        "region": "Столиця Китаю"
+        "city": "Погода в Тунисе",
+        "region": "Столица Туниса"
     },
     "weather": {
-        "time": "2:00",
-        "condition": "Ясно",
-        "temp": -11,
-        "feels_like": -15,
-        "pressure": 1029.08,
-        "humidity": 91,
-        "wind_speed": 2.0,
-        "precip_prob": 0
+        "time": "1:00",
+        "condition": "Сплошная облачность",
+        "temp": 12,
+        "feels_like": 12,
+        "pressure": 1023.74,
+        "humidity": 89,
+        "wind_speed": 1.4,
+        "precip_prob": 2
     }
 }

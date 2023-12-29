@@ -1,0 +1,178 @@
+{
+    "location": {
+        "city": "Vieux Lyon",
+        "country_code": "FR",
+        "latitude": 45.7634,
+        "longitude": 4.8343
+    },
+    "weather_list": [
+        {
+            "date": "2023-12-28/2023-12-28/2023-12-28",
+            "condition": "Clouds/Partially cloudy/Ясно",
+            "icon": "04d",
+            "temp": {
+                "day": 11.68,
+                "min": 5.0,
+                "max": 12.6,
+                "night": 10.06,
+                "eve": 11.5,
+                "morn": 5.77
+            },
+            "feels_like": {
+                "day": 11.36,
+                "night": 7.68,
+                "eve": 11.19,
+                "morn": 4.41
+            },
+            "pressure": 1015,
+            "humidity": 76,
+            "wind_speed": 6.93,
+            "clouds": 88,
+            "precip_prob": 2
+        },
+        {
+            "date": "2023-12-29/2023-12-29/2023-12-29",
+            "condition": "Rain/Partially cloudy/Облачно с прояснениями, дождь",
+            "icon": "10d",
+            "temp": {
+                "day": 11.91,
+                "min": 6.68,
+                "max": 12.47,
+                "night": 9.25,
+                "eve": 9.15,
+                "morn": 6.96
+            },
+            "feels_like": {
+                "day": 11.59,
+                "night": 8.68,
+                "eve": 8.82,
+                "morn": 5.9
+            },
+            "pressure": 1015,
+            "humidity": 83,
+            "wind_speed": 3.24,
+            "clouds": 84,
+            "precip_prob": 25
+        },
+        {
+            "date": "2023-12-30/2023-12-30/2023-12-30",
+            "condition": "Clouds/Partially cloudy/Облачно с прояснениями",
+            "icon": "04d",
+            "temp": {
+                "day": 10.06,
+                "min": 5.27,
+                "max": 10.82,
+                "night": 6.72,
+                "eve": 8.24,
+                "morn": 5.53
+            },
+            "feels_like": {
+                "day": 9.72,
+                "night": 5.98,
+                "eve": 7.35,
+                "morn": 5.53
+            },
+            "pressure": 1012,
+            "humidity": 88,
+            "wind_speed": 2.84,
+            "clouds": 77,
+            "precip_prob": 12
+        },
+        {
+            "date": "2023-12-31/2023-12-31/2023-12-31",
+            "condition": "Rain/Rain, Partially cloudy/Сплошная облачность, дождь",
+            "icon": "10d",
+            "temp": {
+                "day": 10.42,
+                "min": 6.1,
+                "max": 11.18,
+                "night": 8.14,
+                "eve": 6.83,
+                "morn": 10.1
+            },
+            "feels_like": {
+                "day": 9.76,
+                "night": 5.76,
+                "eve": 5.25,
+                "morn": 7.78
+            },
+            "pressure": 1006,
+            "humidity": 78,
+            "wind_speed": 7.05,
+            "clouds": 78,
+            "precip_prob": 67
+        },
+        {
+            "date": "2024-01-01/2024-01-01/2024-01-01",
+            "condition": "Clouds/Overcast/Облачно с прояснениями",
+            "icon": "04d",
+            "temp": {
+                "day": 8.24,
+                "min": 3.28,
+                "max": 8.51,
+                "night": 4.18,
+                "eve": 7.11,
+                "morn": 3.42
+            },
+            "feels_like": {
+                "day": 6.87,
+                "night": 2.99,
+                "eve": 4.96,
+                "morn": 2.76
+            },
+            "pressure": 1007,
+            "humidity": 78,
+            "wind_speed": 3.23,
+            "clouds": 98,
+            "precip_prob": 18
+        },
+        {
+            "date": "2024-01-02/2024-01-02/2024-01-02",
+            "condition": "Rain/Rain, Partially cloudy/Сплошная облачность, дождь",
+            "icon": "10d",
+            "temp": {
+                "day": 7.95,
+                "min": 5.45,
+                "max": 9.34,
+                "night": 8.01,
+                "eve": 8.02,
+                "morn": 6.24
+            },
+            "feels_like": {
+                "day": 6.16,
+                "night": 5.14,
+                "eve": 5.02,
+                "morn": 3.21
+            },
+            "pressure": 1003,
+            "humidity": 84,
+            "wind_speed": 5.61,
+            "clouds": 94,
+            "precip_prob": 83
+        },
+        {
+            "date": "2024-01-03/2024-01-03/2024-01-03",
+            "condition": "Rain/Rain, Partially cloudy/Облачно с прояснениями, мелкий дождь",
+            "icon": "10d",
+            "temp": {
+                "day": 12.56,
+                "min": 8.43,
+                "max": 12.63,
+                "night": 8.76,
+                "eve": 9.87,
+                "morn": 9.19
+            },
+            "feels_like": {
+                "day": 12.29,
+                "night": 6.5,
+                "eve": 8.91,
+                "morn": 7.75
+            },
+            "pressure": 1000,
+            "humidity": 80,
+            "wind_speed": 4.81,
+            "clouds": 92,
+            "precip_prob": 79
+        }
+    ]
+}

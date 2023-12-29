@@ -1,18 +1,18 @@
 {
     "location": {
-        "timezone_city": "Europe/Moscow",
-        "latitude": 56.0,
-        "longitude": 45.0
+        "timezone_city": "Asia/Tokyo",
+        "latitude": 33.0,
+        "longitude": 140.0
     },
     "weather": {
-        "time": "2023-12-26 20:00:00",
-        "desc": "Overcast",
-        "temp": -3.0,
-        "feels_like": -3.0,
-        "pressure": 992.0,
-        "humidity": 100.0,
+        "time": "01:00:00",
+        "condition": "Rain, Overcast",
+        "temp": 16.7,
+        "feels_like": 16.7,
+        "pressure": 1021.0,
+        "humidity": 62.06,
         "clouds": 100.0,
-        "wind_speed": 1.0,
-        "precip_prob": 0.0
+        "wind_speed": 8.31,
+        "precip_prob": 100.0
     }
 }

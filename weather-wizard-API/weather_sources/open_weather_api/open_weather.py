@@ -1,16 +1,14 @@
-import requests
-import json
-from bs4 import BeautifulSoup
-from config import OPEN_WEATHER_API_KEY
-from datetime import datetime, timedelta
+import asyncio
 import time
+import json
+from config import OPEN_WEATHER_API_KEY, OPEN_WEATHER_URL, city_coordinates
+from datetime import datetime
 from aiohttp import ClientSession
 
 
 class OpenWeatherAPI:
     def __init__(self, latitude, longitude):
-        self.base_url = "https://api.openweathermap.org/data/2.5"
-
+        self.base_url = OPEN_WEATHER_URL
         self.params = {
             "lat": latitude,
             "lon": longitude,
@@ -25,39 +23,37 @@ class OpenWeatherAPI:
             url = f"{self.base_url}/weather"
 
             async with session.get(url, params=self.params) as response:
-                self.api_data = await response.json()
-
                 try:
-                    current_weather = {
-                        "location": self.__get_current_location(),
-                        "weather": self.__get_current_weather()
-                    }
+                    if response.status == 200:
+                        self.api_data = await response.json()
 
-                    self.write_to_json(current_weather, "ow_cur")
+                        current_weather = {
+                            "location": self.__get_current_location(),
+                            "weather": self.__get_current_weather()
+                        }
 
-                    return current_weather
+                        self.write_to_json(current_weather, "ow_cur")
 
-                except KeyError:
-                    print("OpenWeatherAPI data fetching error.")
-                    return None
+                        return current_weather
 
+                    else:
+                        raise Exception(f"bad request with status: {response.status}")
 
+                except Exception as error:
+                    print(f"Open Weather API weather data fetching error: {error}")
 
     def __get_current_weather(self):
         weather = {
             # weather time
-            "time": str(datetime.fromtimestamp(self.api_data["dt"])),
+            "time": str(datetime.fromtimestamp(self.api_data["dt"]).time()),
             # weather description
-            "condition": self.api_data['weather'][0]['main'],
-            "desc": self.api_data['weather'][0]['description'],
-            "icon_code": self.api_data['weather'][0]['icon'],
+            "condition": self.api_data['weather'][0]['main1'],
+            "desc": self.api_data['weather'][0]['description'].capitalize(),
+            "icon": self.api_data['weather'][0]['icon'],
 
             # temperature in Celsius
             "temp": self.api_data['main']['temp'],
             "feels_like": self.api_data['main']['feels_like'],
-
-            # "temp_min": self.api_data['main']['temp_min'],
-            # "temp_max": self.api_data['main']['temp_max'],
 
             # other properties
             "pressure": self.api_data['main']['pressure'],
@@ -70,36 +66,43 @@ class OpenWeatherAPI:
 
     def __get_current_location(self):
         return {
-            "city": self.api_data['name'],
-            "country_code": self.api_data['sys']['country'],
+            "city": self.api_data.get('name'),
+            "country_code": self.api_data['sys'].get('country'),
             "latitude": self.api_data["coord"]["lat"],
             "longitude": self.api_data["coord"]["lon"]
         }
 
-    def forecast(self, number_days):
+    async def forecast(self, number_days):
+        async with ClientSession() as session:
+            url = f"{self.base_url}/forecast/daily"
+            self.params["cnt"] = number_days
 
-        url = f"{self.base_url}/forecast/daily"
-        self.params["cnt"] = number_days
-        response = requests.get(url, params=self.params)
+            async with session.get(url, params=self.params) as response:
+                try:
+                    if response.status == 200:
+                        self.api_data = await response.json()
 
-        if response.status_code == 200:
-            self.api_data = response.json()
+                        forecast = {
+                            "location": self.__get_forecast_location(),
+                            "weather_list": self.__get_forecast_weather_list()
+                        }
 
-            forecast = {
-                "location": self.__get_forecast_location(),
-                "weather_list": self.__get_forecast_weather_list()
-            }
+                        self.write_to_json(forecast, "ow_forecast")
+                        return forecast
 
-            # self.write_to_json(self.api_data, "forecast")
-            self.write_to_json(forecast, "ow_forecast")
+                    else:
+                        raise Exception(f"bad request with status: {response.status}")
+
+                except Exception as error:
+                    print(f"Open Weather API forecast fetching error: {error}")
 
     def __get_forecast_weather_list(self):
         weather_list = []
         for day in self.api_data["list"]:
             weather = {
                 "date": str(datetime.fromtimestamp(day['dt']).date()),
-                'conditions': day['weather'][0]['main'],
-                'description': day['weather'][0]['description'],
+                'condition': day['weather'][0]['main'],
+                'desc': day['weather'][0]['description'].capitalize(),
                 'icon': day['weather'][0]['icon'],
                 'temp': day['temp'],
                 'feels_like': day['feels_like'],
@@ -116,13 +119,11 @@ class OpenWeatherAPI:
 
     def __get_forecast_location(self):
         return {
-            "city": self.api_data['city']['name'],
-            "country_code": self.api_data['city']['country'],
+            "city": self.api_data['city'].get('name'),
+            "country_code": self.api_data['city'].get('country'),
             "latitude": self.api_data['city']["coord"]["lat"],
             "longitude": self.api_data['city']["coord"]["lon"]
         }
-
-
 
     @staticmethod
     def write_to_json(data, file_name):
@@ -130,16 +131,18 @@ class OpenWeatherAPI:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-if __name__ == "__main__":
+async def main():
     start_time = time.time()
 
+    weather_handler = OpenWeatherAPI(1, 1)
+    # data = visual_crossing.forecast(7)
 
-    weatherHandler = OpenWeatherAPI(50.43, 30.52)
-    #
-    current_weather1 = weatherHandler.current_weather()
-    print(current_weather1)
-    # weatherHandler.write_to_json(current_weather1, "ow_current_weather")
+    task = asyncio.create_task(weather_handler.current_weather())
 
-    # weather7 = weatherHandler.forecast(7)
+    await task
 
-    print(f"Time: {time.time() - start_time}")
+    print(f"Time: {(time.time() - start_time)}")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

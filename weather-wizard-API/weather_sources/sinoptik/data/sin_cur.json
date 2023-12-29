@@ -4,13 +4,13 @@
         "region": "Обласний центр Вінницької області"
     },
     "weather": {
-        "time": "17:00",
+        "time": "23:00",
         "condition": "Хмарно",
-        "temp": 11,
-        "feels_like": 11,
-        "pressure": 978.42,
-        "humidity": 77,
-        "wind_speed": 5.2,
-        "precip_prob": 23
+        "temp": 9,
+        "feels_like": 6,
+        "pressure": 979.75,
+        "humidity": 72,
+        "wind_speed": 5.7,
+        "precip_prob": 4
     }
 }

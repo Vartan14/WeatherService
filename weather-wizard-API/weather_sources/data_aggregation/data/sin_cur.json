@@ -1,16 +1,16 @@
 {
     "location": {
-        "city": "Погода у Могилеві-Подільському",
-        "region": "Вінницька область"
+        "city": "Погода в Виннице",
+        "region": "Областной центр Винницкой области"
     },
     "weather": {
-        "time": "20:00",
-        "condition": "Хмарно",
-        "temp": 11,
-        "feels_like": 11,
-        "pressure": 999.75,
-        "humidity": 76,
-        "wind_speed": 2.2,
-        "precip_prob": 0
+        "time": "23:00",
+        "condition": "Небольшая облачность",
+        "temp": 1,
+        "feels_like": -2,
+        "pressure": 989.09,
+        "humidity": 88,
+        "wind_speed": 3.6,
+        "precip_prob": 1
     }
 }

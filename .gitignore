@@ -40,4 +40,4 @@ weather-app/src/config.js
 
 weather-wizard-API/venv/
 weather-wizard-API/.idea
-weather-wizard-APIconfig.py
+weather-wizard-API/config.py

@@ -2,21 +2,16 @@ import asyncio
 import json
 import time
 from aiohttp import ClientSession
-import requests
 from datetime import datetime, timedelta
-from config import VISUAL_CROSSING_API_KEY
-
-BASE_URL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline'
-data = '2023-12-24T00:21:13'
+from config import VISUAL_CROSSING_API_KEY, VISUAL_CROSSING_URL
 
 
 class VisualCrossingAPI:
     def __init__(self, latitude, longitude):
-        self.url = f"{BASE_URL}/{latitude},{longitude}"
+        self.url = f"{VISUAL_CROSSING_URL}/{latitude},{longitude}"
         self.params = {
             'key': VISUAL_CROSSING_API_KEY,
             'unitGroup': 'metric',
-            'include': "current"
         }
         self.api_data = None
 
@@ -25,23 +20,28 @@ class VisualCrossingAPI:
             current_datetime = datetime.now()
             date = current_datetime.strftime("%Y-%m-%dT%H:%M:%S")
 
+            self.params['include'] = "current"
+
             async with session.get(f"{self.url}/{date}", params=self.params) as response:
-                self.api_data = await response.json()
-                self.write_to_json(self.api_data, "test")
 
                 try:
-                    current_weather = {
-                        "location": self.__get_current_location(),
-                        "weather": self.__get_current_weather()
-                    }
+                    if response.status == 200:
+                        self.api_data = await response.json()
 
-                    self.write_to_json(current_weather, "vc_cur")
+                        current_weather = {
+                            "location": self.__get_current_location(),
+                            "weather": self.__get_current_weather()
+                        }
 
-                    return current_weather
+                        self.write_to_json(current_weather, "vc_cur")
 
-                except KeyError:
-                    print("VisualCrossingAPI data fetching error")
-                    return None
+                        return current_weather
+                    else:
+                        raise Exception(f"bad request with status code {response.status}")
+
+                except Exception as error:
+                    print(f"Visual Crossing API weather data fetching error: {error}")
+
 
     def __get_current_location(self):
         return {
@@ -53,53 +53,65 @@ class VisualCrossingAPI:
     def __get_current_weather(self):
         return {
             'time':
-                f"{self.api_data['days'][0]['datetime']} {self.api_data['currentConditions']['datetime']}",
+                f"{self.api_data['currentConditions']['datetime']}",
             'desc': self.api_data['currentConditions']['conditions'],
             'temp': self.api_data['currentConditions']['temp'],
             'feels_like': self.api_data['currentConditions']['feelslike'],
             'pressure': self.api_data['currentConditions']['pressure'],
             'humidity': self.api_data['currentConditions']['humidity'],
             'clouds': self.api_data['currentConditions']['cloudcover'],
-            'wind_speed': round(self.api_data['currentConditions']['windspeed'] / 3.6, 2),      # m/s
+            'wind_speed': round(self.api_data['currentConditions']['windspeed'] / 3.6, 2),  # m/s
             'precip_prob': self.api_data['currentConditions']['precipprob']  # Probability of precipitation
         }
 
-    def forecast(self, number_days):
-        current_datetime = datetime.now()
-        forecast_datetime = current_datetime + timedelta(days=number_days - 1)
+    async def forecast(self, number_days):
+        async with ClientSession() as session:
+            current_datetime = datetime.now()
+            forecast_datetime = current_datetime + timedelta(days=number_days - 1)
 
-        date_1 = current_datetime.strftime("%Y-%m-%dT%H:%M:%S")
-        date_2 = forecast_datetime.strftime("%Y-%m-%dT%H:%M:%S")
+            date_1 = current_datetime.strftime("%Y-%m-%dT%H:%M:%S")
+            date_2 = forecast_datetime.strftime("%Y-%m-%dT%H:%M:%S")
 
-        response = requests.get(f"{self.url}/{date_1}/{date_2}", params=self.params)
+            async with session.get(f"{self.url}/{date_1}/{date_2}", params=self.params) as response:
 
-        if response.status_code == 200:
-            self.api_data = response.json()
+                try:
+                    if response.status == 200:
+                        self.api_data = await response.json()
 
-            forecast = {
-                "location": self.__get_current_location_data(),
-                "weather_list": self.__get_weather_list()
-            }
-            self.write_to_json(forecast, 'vc_forecast')
-            # self.write_to_json(response.json(), 'data_forecast')
+                        forecast = {
+                            "location": self.__get_current_location(),
+                            "weather_list": self.__get_weather_list()
+                        }
+                        self.write_to_json(forecast, 'vc_forecast')
 
-            return forecast
+                        return forecast
 
+                    else:
+                        raise Exception(f"bad request with status code {response.status}")
 
+                except Exception as error:
+                    print(f"Visual Crossing API forecast data fetching error: {error}")
 
     def __get_weather_list(self):
         weather_list = []
         for day in self.api_data["days"]:
             weather = {
                 'date': day['datetime'],
-                'conditions': day['conditions'],
-                'description': day['description'],
-                'temp': day['temp'],
-                'temp_min': day['tempmin'],
-                'temp_max': day['tempmax'],
-                'feels_like': day['feelslike'],
-                'feels_like_min': day['feelslikemin'],
-                'feels_like_max': day['feelslikemax'],
+                'condition': day['conditions'],
+                "temp": {
+                    "night": day['hours'][2]['temp'],
+                    "morn": day['hours'][8]['temp'],
+                    "day": day['hours'][14]['temp'],
+                    "eve": day['hours'][20]['temp'],
+                    "min": day['tempmin'],
+                    "max": day['tempmax']
+                },
+                "feels_like": {
+                    "night": day['hours'][2]['feelslike'],
+                    "morn": day['hours'][8]['feelslike'],
+                    "day": day['hours'][14]['feelslike'],
+                    "eve": day['hours'][20]['feelslike'],
+                },
                 'pressure': day['pressure'],
                 'humidity': day['humidity'],
                 'clouds': day['cloudcover'],
@@ -111,14 +123,13 @@ class VisualCrossingAPI:
 
         return weather_list
 
-
     @staticmethod
     def write_to_json(data, file_name):
         with open(f"data/{file_name}.json", "w") as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
-from config import city_coordinates
-async def main_cur():
+
+async def main():
     start_time = time.time()
 
     lat, lon = city_coordinates['Vlad']
@@ -126,7 +137,7 @@ async def main_cur():
     visual_crossing = VisualCrossingAPI(lat, lon)
     # data = visual_crossing.forecast(7)
 
-    task = asyncio.create_task(visual_crossing.current_weather())
+    task = asyncio.create_task(visual_crossing.forecast(7))
 
     await task
 
@@ -137,5 +148,6 @@ async def main_cur():
 
 
 if __name__ == '__main__':
+    from config import city_coordinates
 
-    asyncio.run(main_cur())
+    asyncio.run(main())

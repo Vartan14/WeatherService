@@ -1,0 +1,140 @@
+{
+    "location": {
+        "city": "Погода в Киеве",
+        "region": "Столица Украины"
+    },
+    "weather_list": [
+        {
+            "date": "2023-12-29",
+            "temp": {
+                "night": 5,
+                "morn": 3,
+                "day": 8,
+                "eve": 5,
+                "min": 3,
+                "max": 8
+            },
+            "feels_like": {
+                "night": 3,
+                "morn": 1,
+                "day": 6,
+                "eve": 3
+            },
+            "pressure": 994.08,
+            "humidity": 84.12,
+            "wind_speed": 2.3,
+            "precip_prob": 2,
+            "condition": "Переменная облачность"
+        },
+        {
+            "date": "2023-12-30",
+            "temp": {
+                "night": 5,
+                "morn": 4,
+                "day": 9,
+                "eve": 7,
+                "min": 4,
+                "max": 9
+            },
+            "feels_like": {
+                "night": 3,
+                "morn": 1,
+                "day": 7,
+                "eve": 5
+            },
+            "pressure": 992.25,
+            "humidity": 82.0,
+            "wind_speed": 2.72,
+            "precip_prob": 6,
+            "condition": "Облачно с прояснениями"
+        },
+        {
+            "date": "2023-12-31",
+            "temp": {
+                "night": 5,
+                "morn": 3,
+                "day": 5,
+                "eve": 1,
+                "min": 1,
+                "max": 5
+            },
+            "feels_like": {
+                "night": 2,
+                "morn": 0,
+                "day": 3,
+                "eve": 1
+            },
+            "pressure": 995.75,
+            "humidity": 81.5,
+            "wind_speed": 2.7,
+            "precip_prob": 8,
+            "condition": "Сплошная облачность"
+        },
+        {
+            "date": "2024-01-01",
+            "temp": {
+                "night": 0,
+                "morn": 0,
+                "day": 6,
+                "eve": 4,
+                "min": 0,
+                "max": 6
+            },
+            "feels_like": {
+                "night": 0,
+                "morn": -2,
+                "day": 3,
+                "eve": 2
+            },
+            "pressure": 992.42,
+            "humidity": 89.25,
+            "wind_speed": 2.22,
+            "precip_prob": 19,
+            "condition": "Облачно с прояснениями"
+        },
+        {
+            "date": "2024-01-02",
+            "temp": {
+                "night": 4,
+                "morn": 2,
+                "day": 3,
+                "eve": 0,
+                "min": 0,
+                "max": 4
+            },
+            "feels_like": {
+                "night": 2,
+                "morn": -1,
+                "day": 0,
+                "eve": -3
+            },
+            "pressure": 986.42,
+            "humidity": 88.25,
+            "wind_speed": 2.68,
+            "precip_prob": 29,
+            "condition": "Облачно с прояснениями, дождь"
+        },
+        {
+            "date": "2024-01-03",
+            "temp": {
+                "night": 1,
+                "morn": 1,
+                "day": 7,
+                "eve": 3,
+                "min": 1,
+                "max": 7
+            },
+            "feels_like": {
+                "night": -1,
+                "morn": -1,
+                "day": 4,
+                "eve": 0
+            },
+            "pressure": 974.76,
+            "humidity": 84.75,
+            "wind_speed": 2.6,
+            "precip_prob": 50,
+            "condition": "Сплошная облачность, дождь"
+        }
+    ]
+}

@@ -1,20 +1,20 @@
 {
     "location": {
-        "city": "Bayan",
-        "country_code": "MN",
-        "latitude": 48.44,
-        "longitude": 111
+        "city": "Vinnytsia",
+        "country_code": "UA",
+        "latitude": 49.2345,
+        "longitude": 28.4748
     },
     "weather": {
-        "time": "2023-12-26 20:44:03",
+        "time": "22:02:16",
         "condition": "Clouds",
-        "desc": "scattered clouds",
-        "icon_code": "03n",
-        "temp": -22.15,
-        "feels_like": -26.96,
-        "pressure": 1034,
-        "humidity": 97,
-        "clouds": 29,
-        "wind_speed": 1.48
+        "desc": "overcast clouds",
+        "icon": "04n",
+        "temp": 2.16,
+        "feels_like": -1.35,
+        "pressure": 1019,
+        "humidity": 77,
+        "clouds": 100,
+        "wind_speed": 3.58
     }
 }

@@ -5,6 +5,8 @@ import { WEATHER_API_URL } from "./api"
 import { WEATHER_API_KEY } from "./config"
 import { useState } from "react"
 import Forecast from "./components/forecast/forecast"
+import axios from "axios"
+
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null)
@@ -13,27 +15,21 @@ function App() {
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ")
 
-    const currentWeatherFetch = fetch(
-      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
-    )
+    axios.get(`${"http://127.0.0.1:5000"}/weather?lat=${lat}&lon=${lon}`).then(resp => {
+      setCurrentWeather({ city: searchData.label, ...resp.data})
+    }).catch((err) => console.log(err))
 
-    const forecastWeatherFetch = fetch(
-      `${WEATHER_API_URL}/forecast/daily?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
-    )
+ 
+    axios.get(`${"http://127.0.0.1:5000"}/forecast?lat=${lat}&lon=${lon}&days=7`).then(resp => {
+      setForecast({ city: searchData.label, ...resp.data})
+    }).catch((err) => console.log(err))
 
-    Promise.all([currentWeatherFetch, forecastWeatherFetch])
-      .then(async (response) => {
-        const weatherResponse = await response[0].json()
-        const forecastResponse = await response[1].json()
-
-        setCurrentWeather({ city: searchData.label, ...weatherResponse })
-        setForecast({ city: searchData.label, ...forecastResponse })
-      })
-      .catch((err) => console.log(err))
   }
 
 
+  console.log(currentWeather);
   console.log(forecast);
+  
 
   return (
     <div className="container">
