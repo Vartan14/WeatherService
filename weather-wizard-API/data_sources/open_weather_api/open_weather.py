@@ -47,7 +47,7 @@ class OpenWeatherAPI:
             # weather time
             "time": str(datetime.fromtimestamp(self.api_data["dt"]).time()),
             # weather description
-            "condition": self.api_data['weather'][0]['main1'],
+            "condition": self.api_data['weather'][0]['main'],
             "desc": self.api_data['weather'][0]['description'].capitalize(),
             "icon": self.api_data['weather'][0]['icon'],
 

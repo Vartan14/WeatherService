@@ -1,20 +1,20 @@
 {
     "location": {
-        "city": "Kyiv",
-        "country_code": "UA",
-        "latitude": 50.43,
-        "longitude": 30.52
+        "city": "Mohali",
+        "country_code": "IN",
+        "latitude": 30.68,
+        "longitude": 76.7221
     },
     "weather": {
-        "time": "01:26:36",
+        "time": "19:40:24",
         "condition": "Clouds",
-        "desc": "overcast clouds",
+        "desc": "Broken clouds",
         "icon": "04n",
-        "temp": 4.94,
-        "feels_like": 4.94,
-        "pressure": 1014,
-        "humidity": 89,
-        "clouds": 100,
-        "wind_speed": 0.45
+        "temp": 11.96,
+        "feels_like": 10.26,
+        "pressure": 1017,
+        "humidity": 40,
+        "clouds": 67,
+        "wind_speed": 1.36
     }
 }

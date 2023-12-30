@@ -1,5 +1,4 @@
 import re
-from flask import abort
 from config import MIN_DAYS_FORECAST, MAX_DAYS_FORECAST
 
 

@@ -1,11 +1,12 @@
 import asyncio
 import numpy as np
-from weather_sources.open_weather_api.open_weather import OpenWeatherAPI
-from weather_sources.visual_crossing.visual_crossing import VisualCrossingAPI
-from weather_sources.sinoptik.sinoptik_web_scraper import SinoptikWebScraper
+from data_sources.open_weather_api.open_weather import OpenWeatherAPI
+from data_sources.visual_crossing.visual_crossing import VisualCrossingAPI
+from data_sources.sinoptik.sinoptik_web_scraper import SinoptikWebScraper
 import time
 import json
 from config import city_coordinates
+
 
 
 class CurrentWeather:
@@ -16,17 +17,18 @@ class CurrentWeather:
     def get(self):
         data = asyncio.run(self.__get_data())
 
-        if not any(data):
-            print("All sources are invalid!!!")
-            return None
-
-        elif None in data:
+        # remove None sources from list
+        if None in data:
             data = [source for source in data if source is not None]
+
+        # return None if no weather
+        if len(data) == 0:
+            return None
 
         weather = {
             "time": f"/".join([source['weather']['time'] for source in data]),
-            "condition": data[0]["weather"]["condition"],
-            "desc": data[0]["weather"]["desc"],
+            "condition": data[0]["weather"].get("condition"),
+            "desc": data[0]["weather"].get("desc"),
             "icon": data[0]["weather"].get("icon"),
 
             "temp": self.__aggregate_prop(data, "temp", 2),  # temp in Celsius
@@ -61,6 +63,8 @@ class CurrentWeather:
         results = await asyncio.gather(*tasks)
 
         return results
+
+
 
     @staticmethod
     def __aggregate_prop(data, prop, round_number=0):

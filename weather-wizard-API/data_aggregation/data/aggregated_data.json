@@ -1,0 +1,21 @@
+{
+    "location": {
+        "city": "Vinnytsia",
+        "country_code": "UA",
+        "latitude": 49.233,
+        "longitude": 28.4682
+    },
+    "weather": {
+        "time": "17:36:35/17:00:00/17:00",
+        "condition": "Clouds",
+        "desc": "Scattered clouds",
+        "icon": "03n",
+        "temp": 6.56,
+        "feels_like": 4.72,
+        "pressure": 1006,
+        "humidity": 75,
+        "wind_speed": 2.93,
+        "clouds": 59,
+        "precip_prob": null
+    }
+}

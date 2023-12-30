@@ -1,16 +1,16 @@
 {
     "location": {
-        "city": "Погода в Тунисе",
-        "region": "Столица Туниса"
+        "city": "Погода в Киеве",
+        "region": "Столица Украины"
     },
     "weather": {
-        "time": "1:00",
-        "condition": "Сплошная облачность",
-        "temp": 12,
-        "feels_like": 12,
-        "pressure": 1023.74,
-        "humidity": 89,
-        "wind_speed": 1.4,
-        "precip_prob": 2
+        "time": "20:00",
+        "condition": "Облачно с прояснениями",
+        "temp": 8,
+        "feels_like": 6,
+        "pressure": 990.42,
+        "humidity": 76,
+        "wind_speed": 3.4,
+        "precip_prob": 15
     }
 }

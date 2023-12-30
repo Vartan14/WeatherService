@@ -3,10 +3,10 @@ import json
 import time
 import numpy as np
 
-from config import city_coordinates, MAX_DAYS_FORECAST, MIN_DAYS_FORECAST
-from weather_sources.open_weather_api.open_weather import OpenWeatherAPI
-from weather_sources.sinoptik.sinoptik_web_scraper import SinoptikWebScraper
-from weather_sources.visual_crossing.visual_crossing import VisualCrossingAPI
+from config import city_coordinates
+from data_sources.open_weather_api.open_weather import OpenWeatherAPI
+from data_sources.sinoptik.sinoptik_web_scraper import SinoptikWebScraper
+from data_sources.visual_crossing.visual_crossing import VisualCrossingAPI
 
 
 class Forecast:

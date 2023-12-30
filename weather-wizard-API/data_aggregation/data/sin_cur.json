@@ -1,0 +1,16 @@
+{
+    "location": {
+        "city": "Погода в Виннице",
+        "region": "Областной центр Винницкой области"
+    },
+    "weather": {
+        "time": "17:00",
+        "condition": "Сплошная облачность",
+        "temp": 6,
+        "feels_like": 6,
+        "pressure": 990.42,
+        "humidity": 80,
+        "wind_speed": 0.0,
+        "precip_prob": 0
+    }
+}
