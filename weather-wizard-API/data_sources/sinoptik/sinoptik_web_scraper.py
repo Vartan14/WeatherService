@@ -169,7 +169,6 @@ class SinoptikWebScraper:
                 else:
                     raise Exception(f"bad request to {url} with status code {response}")
 
-
     async def __get_main_page_forecast_data(self):
         async with ClientSession() as session:
             url = f"{self.url}/погода-{self.city_name}"

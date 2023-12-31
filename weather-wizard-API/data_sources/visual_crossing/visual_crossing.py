@@ -42,7 +42,6 @@ class VisualCrossingAPI:
                 except Exception as error:
                     print(f"Visual Crossing API weather data fetching error: {error}")
 
-
     def __get_current_location(self):
         return {
             'timezone_city': self.api_data['timezone'],

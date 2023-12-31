@@ -8,7 +8,6 @@ import json
 from config import city_coordinates
 
 
-
 class CurrentWeather:
     def __init__(self, lat, lon):
         self.lat = lat
@@ -63,8 +62,6 @@ class CurrentWeather:
         results = await asyncio.gather(*tasks)
 
         return results
-
-
 
     @staticmethod
     def __aggregate_prop(data, prop, round_number=0):

@@ -1,184 +1,184 @@
 {
     "location": {
-        "city": "Mohali",
-        "country_code": "IN",
-        "latitude": 30.68,
-        "longitude": 76.7221
+        "city": "Pushcha-Vodytsya",
+        "country_code": "UA",
+        "latitude": 50.45,
+        "longitude": 30.5236
     },
     "weather_list": [
         {
-            "date": "2023-12-30",
+            "date": "2023-12-31",
+            "condition": "Clouds",
+            "desc": "Broken clouds",
+            "icon": "04d",
+            "temp": {
+                "day": 4.97,
+                "min": 1.06,
+                "max": 5.38,
+                "night": 1.06,
+                "eve": 2.7,
+                "morn": 4.88
+            },
+            "feels_like": {
+                "day": 1.04,
+                "night": -1.51,
+                "eve": -0.99,
+                "morn": 0.98
+            },
+            "pressure": 1015,
+            "humidity": 65,
+            "clouds": 76,
+            "wind_speed": 6.38,
+            "precip_prob": 19.0
+        },
+        {
+            "date": "2024-01-01",
+            "condition": "Rain",
+            "desc": "Light rain",
+            "icon": "10d",
+            "temp": {
+                "day": 4.49,
+                "min": 0.68,
+                "max": 5.25,
+                "night": 4.93,
+                "eve": 4.69,
+                "morn": 1.11
+            },
+            "feels_like": {
+                "day": 0.97,
+                "night": 1.81,
+                "eve": 1.44,
+                "morn": -1.73
+            },
+            "pressure": 1013,
+            "humidity": 76,
+            "clouds": 100,
+            "wind_speed": 4.7,
+            "precip_prob": 99.0
+        },
+        {
+            "date": "2024-01-02",
+            "condition": "Snow",
+            "desc": "Rain and snow",
+            "icon": "13d",
+            "temp": {
+                "day": -2.58,
+                "min": -6.69,
+                "max": 5.25,
+                "night": -6.69,
+                "eve": -4.69,
+                "morn": 3.96
+            },
+            "feels_like": {
+                "day": -9.24,
+                "night": -12.25,
+                "eve": -11,
+                "morn": -0.59
+            },
+            "pressure": 1008,
+            "humidity": 72,
+            "clouds": 100,
+            "wind_speed": 7.01,
+            "precip_prob": 100.0
+        },
+        {
+            "date": "2024-01-03",
+            "condition": "Snow",
+            "desc": "Snow",
+            "icon": "13d",
+            "temp": {
+                "day": -7.49,
+                "min": -9.1,
+                "max": -6.92,
+                "night": -7.18,
+                "eve": -7.35,
+                "morn": -9.1
+            },
+            "feels_like": {
+                "day": -13.67,
+                "night": -14.18,
+                "eve": -14.35,
+                "morn": -14.32
+            },
+            "pressure": 1015,
+            "humidity": 42,
+            "clouds": 100,
+            "wind_speed": 6.22,
+            "precip_prob": 100.0
+        },
+        {
+            "date": "2024-01-04",
+            "condition": "Snow",
+            "desc": "Light snow",
+            "icon": "13d",
+            "temp": {
+                "day": -7.61,
+                "min": -10.6,
+                "max": -7.1,
+                "night": -10.55,
+                "eve": -8.9,
+                "morn": -7.29
+            },
+            "feels_like": {
+                "day": -13.79,
+                "night": -16.28,
+                "eve": -14.71,
+                "morn": -13.86
+            },
+            "pressure": 1008,
+            "humidity": 88,
+            "clouds": 100,
+            "wind_speed": 5.55,
+            "precip_prob": 100.0
+        },
+        {
+            "date": "2024-01-05",
+            "condition": "Snow",
+            "desc": "Light snow",
+            "icon": "13d",
+            "temp": {
+                "day": -8.28,
+                "min": -10.08,
+                "max": -7.2,
+                "night": -7.2,
+                "eve": -8.19,
+                "morn": -9.76
+            },
+            "feels_like": {
+                "day": -13.89,
+                "night": -12.53,
+                "eve": -13.26,
+                "morn": -15.21
+            },
+            "pressure": 1019,
+            "humidity": 91,
+            "clouds": 100,
+            "wind_speed": 3.51,
+            "precip_prob": 81.0
+        },
+        {
+            "date": "2024-01-06",
             "condition": "Clouds",
             "desc": "Overcast clouds",
             "icon": "04d",
             "temp": {
-                "day": 18.99,
-                "min": 9.88,
-                "max": 21.33,
-                "night": 11.43,
-                "eve": 16.37,
-                "morn": 10.32
+                "day": -2.66,
+                "min": -6.7,
+                "max": 0.68,
+                "night": 0.68,
+                "eve": -0.53,
+                "morn": -5.46
             },
             "feels_like": {
-                "day": 17.75,
-                "night": 9.8,
-                "eve": 14.95,
-                "morn": 8.71
+                "day": -8.45,
+                "night": -4.52,
+                "eve": -6.24,
+                "morn": -11.02
             },
             "pressure": 1020,
-            "humidity": 31,
-            "clouds": 96,
-            "wind_speed": 1.8,
-            "precip_prob": 0.0
-        },
-        {
-            "date": "2023-12-31",
-            "condition": "Clouds",
-            "desc": "Scattered clouds",
-            "icon": "03d",
-            "temp": {
-                "day": 19.31,
-                "min": 9.66,
-                "max": 22,
-                "night": 12.3,
-                "eve": 16.52,
-                "morn": 10.16
-            },
-            "feels_like": {
-                "day": 18.05,
-                "night": 10.76,
-                "eve": 15.12,
-                "morn": 8.51
-            },
-            "pressure": 1019,
-            "humidity": 29,
-            "clouds": 46,
-            "wind_speed": 1.62,
-            "precip_prob": 0.0
-        },
-        {
-            "date": "2024-01-01",
-            "condition": "Clear",
-            "desc": "Sky is clear",
-            "icon": "01d",
-            "temp": {
-                "day": 20.31,
-                "min": 10.12,
-                "max": 22.67,
-                "night": 12.4,
-                "eve": 17.14,
-                "morn": 10.68
-            },
-            "feels_like": {
-                "day": 19.13,
-                "night": 10.79,
-                "eve": 15.72,
-                "morn": 9.14
-            },
-            "pressure": 1018,
-            "humidity": 28,
-            "clouds": 0,
-            "wind_speed": 1.92,
-            "precip_prob": 0.0
-        },
-        {
-            "date": "2024-01-02",
-            "condition": "Clear",
-            "desc": "Sky is clear",
-            "icon": "01d",
-            "temp": {
-                "day": 20.18,
-                "min": 9.95,
-                "max": 23.04,
-                "night": 12.57,
-                "eve": 17.47,
-                "morn": 10.47
-            },
-            "feels_like": {
-                "day": 18.96,
-                "night": 10.93,
-                "eve": 16.03,
-                "morn": 8.83
-            },
-            "pressure": 1017,
-            "humidity": 27,
-            "clouds": 0,
-            "wind_speed": 2.29,
-            "precip_prob": 0.0
-        },
-        {
-            "date": "2024-01-03",
-            "condition": "Clear",
-            "desc": "Sky is clear",
-            "icon": "01d",
-            "temp": {
-                "day": 20.56,
-                "min": 10.68,
-                "max": 23.01,
-                "night": 12.45,
-                "eve": 17.27,
-                "morn": 10.68
-            },
-            "feels_like": {
-                "day": 19.38,
-                "night": 10.74,
-                "eve": 15.78,
-                "morn": 9.06
-            },
-            "pressure": 1017,
-            "humidity": 27,
-            "clouds": 0,
-            "wind_speed": 1.84,
-            "precip_prob": 0.0
-        },
-        {
-            "date": "2024-01-04",
-            "condition": "Clear",
-            "desc": "Sky is clear",
-            "icon": "01d",
-            "temp": {
-                "day": 19.93,
-                "min": 10.57,
-                "max": 23.14,
-                "night": 12.3,
-                "eve": 17.69,
-                "morn": 10.57
-            },
-            "feels_like": {
-                "day": 18.63,
-                "night": 10.47,
-                "eve": 16.17,
-                "morn": 8.83
-            },
-            "pressure": 1018,
-            "humidity": 25,
-            "clouds": 2,
-            "wind_speed": 2.85,
-            "precip_prob": 0.0
-        },
-        {
-            "date": "2024-01-05",
-            "condition": "Clear",
-            "desc": "Sky is clear",
-            "icon": "01d",
-            "temp": {
-                "day": 20.15,
-                "min": 10.17,
-                "max": 23.05,
-                "night": 12.2,
-                "eve": 17.36,
-                "morn": 10.17
-            },
-            "feels_like": {
-                "day": 18.8,
-                "night": 10.29,
-                "eve": 15.75,
-                "morn": 8.26
-            },
-            "pressure": 1016,
-            "humidity": 22,
-            "clouds": 1,
-            "wind_speed": 2.76,
+            "humidity": 96,
+            "clouds": 100,
+            "wind_speed": 6.23,
             "precip_prob": 0.0
         }
     ]

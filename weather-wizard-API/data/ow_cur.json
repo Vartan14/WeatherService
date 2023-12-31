@@ -1,20 +1,20 @@
 {
     "location": {
-        "city": "Mohali",
-        "country_code": "IN",
-        "latitude": 30.68,
-        "longitude": 76.7221
+        "city": "Pushcha-Vodytsya",
+        "country_code": "UA",
+        "latitude": 50.4547,
+        "longitude": 30.5238
     },
     "weather": {
-        "time": "19:40:24",
+        "time": "02:12:40",
         "condition": "Clouds",
         "desc": "Broken clouds",
         "icon": "04n",
-        "temp": 11.96,
-        "feels_like": 10.26,
-        "pressure": 1017,
-        "humidity": 40,
-        "clouds": 67,
-        "wind_speed": 1.36
+        "temp": 5.27,
+        "feels_like": 5.27,
+        "pressure": 1011,
+        "humidity": 74,
+        "clouds": 52,
+        "wind_speed": 0.45
     }
 }
