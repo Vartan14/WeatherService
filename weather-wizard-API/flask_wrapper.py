@@ -1,4 +1,4 @@
-from handlers.error_handler import ErrorHandler
+from views.weather.error_handler import ErrorHandler
 
 
 class FlaskAppWrapper:
@@ -6,6 +6,7 @@ class FlaskAppWrapper:
         self.app = app
         self.configs(**configs)
         self.error_handler = ErrorHandler(app)
+
 
     def configs(self, **configs):
         for config, value in configs.items():

@@ -1,20 +1,20 @@
 {
     "location": {
-        "city": "Pushcha-Vodytsya",
-        "country_code": "UA",
-        "latitude": 50.4547,
-        "longitude": 30.5238
+        "city": "Encamp",
+        "country_code": "AD",
+        "latitude": 42.5361,
+        "longitude": 1.5828
     },
     "weather": {
-        "time": "02:12:40",
+        "time": "23:49:17",
         "condition": "Clouds",
-        "desc": "Broken clouds",
+        "desc": "Overcast clouds",
         "icon": "04n",
-        "temp": 5.27,
-        "feels_like": 5.27,
-        "pressure": 1011,
-        "humidity": 74,
-        "clouds": 52,
+        "temp": 5.21,
+        "feels_like": 5.21,
+        "pressure": 1009,
+        "humidity": 79,
+        "clouds": 100,
         "wind_speed": 0.45
     }
 }

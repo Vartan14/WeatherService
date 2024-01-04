@@ -1,0 +1,85 @@
+body {
+  background-color: #344a72;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.form-box {
+    width: 360px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.apikey-label {
+    margin-bottom: 5px;
+}
+
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+.submit-button {
+    width: 320px;
+    height: 35px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.message {
+    color: red;
+    text-align: left;
+    font-size: 15px;
+}
+
+.alt-form {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+a {
+  color: #49c1a2;
+}
+
+
+
+
+
+

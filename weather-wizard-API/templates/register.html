@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up | By Code Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="form-box">
+          <h1>Sign Up</h1>
+          <form action="{{ url_for('register') }}" method="post">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="" />
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="" />
+
+            <label for="confirm_password">Confirm Password</label>
+            <input id="confirm_password" name="confirm_password" type="password" placeholder="" />
+
+            <button class="submit-button">Submit</button>
+
+            <p class="message">{{ msg }}</p>
+
+          </form>
+        </div>
+        <div class="alt-form">
+            <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+        </div>
+    </div>
+  </body>
+</html>

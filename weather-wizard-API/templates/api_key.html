@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+            <div class="form-box">
+                <h1>Weather Wizard</h1>
+                <form method="post">
+                    <label for="api-key" class="apikey-label">Your API key</label>
+                    <input type="text" id="api-key" name="api-key" value="{{ api_key }}" />
+
+                    <button class="submit-button">Get API key</button>
+
+                    <p class="message">{{ msg }}</p>
+                </form>
+            </div>
+            <div class="alt-form">
+               <p>Want to <a href="{{ url_for('logout') }}" class="btn">Logout</a>?</p>
+            </div>
+
+    </div>
+  </body>
+</html>

@@ -4,13 +4,13 @@
         "region": "Столица Украины"
     },
     "weather": {
-        "time": "2:00",
-        "condition": "Сплошная облачность",
-        "temp": 5,
-        "feels_like": 2,
-        "pressure": 991.75,
-        "humidity": 70,
-        "wind_speed": 3.0,
+        "time": "23:00",
+        "condition": "Сплошная облачность, мелкий дождь",
+        "temp": 0,
+        "feels_like": 0,
+        "pressure": 978.42,
+        "humidity": 97,
+        "wind_speed": 0.0,
         "precip_prob": 0
     }
 }

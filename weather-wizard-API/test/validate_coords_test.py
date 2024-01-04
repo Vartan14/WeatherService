@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-from handlers.validation import Validator
+from views.weather.validation import Validator
 
 
 class TestValidateCoords(TestCase):

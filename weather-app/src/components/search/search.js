@@ -7,7 +7,7 @@ const Search = ({ onSearchChange }) => {
 
   const loadOptions = (inputValue) => {
     return fetch(
-      `${GEO_API_URL}/cities?namePrefix=${inputValue}&minPopulation=100000`,
+      `${GEO_API_URL}/cities?namePrefix=${inputValue}&minPopulation=10000`,
       geoApiOptions
     )
       .then((response) => response.json())

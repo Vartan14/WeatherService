@@ -15,12 +15,12 @@ function App() {
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ")
 
-    axios.get(`${"http://127.0.0.1:5000"}/weather?lat=${lat}&lon=${lon}`).then(resp => {
+    axios.get(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&apikey=${WEATHER_API_KEY}`).then(resp => {
       setCurrentWeather({ city: searchData.label, ...resp.data})
     }).catch((err) => console.log(err))
 
  
-    axios.get(`${"http://127.0.0.1:5000"}/forecast?lat=${lat}&lon=${lon}&days=7`).then(resp => {
+    axios.get(`${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&apikey=${WEATHER_API_KEY}`).then(resp => {
       setForecast({ city: searchData.label, ...resp.data})
     }).catch((err) => console.log(err))
 

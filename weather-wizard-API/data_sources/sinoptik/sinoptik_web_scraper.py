@@ -36,9 +36,9 @@ class SinoptikWebScraper:
             if response.status_code == 200:
                 data = response.json()
 
-                ru_city = data[0]["local_names"]['ru'].strip().lower().replace(' ', '-')
-                print(f"ru: <{ru_city}>")
-                return ru_city
+                uk_city = data[0]["local_names"]['uk'].strip().lower().replace(' ', '-')
+                print(f"uk: <{uk_city}>")
+                return uk_city
 
             else:
                 raise Exception(f"bad request with status code {response.status_code}")
