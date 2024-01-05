@@ -12,6 +12,11 @@ USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHT
 MIN_DAYS_FORECAST = 1
 MAX_DAYS_FORECAST = 7
 
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'Vartan'
+MYSQL_PASSWORD = 'vartan2004'
+MYSQL_DB = 'weatherwizard'
+
 city_coordinates = {
     "Kyiv": (50.43, 30.52),
     "Moh": (48.44, 27.80),

@@ -1,162 +1,162 @@
 {
     "location": {
-        "city": "Погода в Торонто",
-        "region": "США, Штат Канзас"
+        "city": "Погода в Киеве",
+        "region": "Столица Украины"
     },
     "weather_list": [
         {
-            "date": "2024-01-04",
-            "temp": {
-                "night": -1,
-                "morn": -2,
-                "day": 3,
-                "eve": 3,
-                "min": -2,
-                "max": 7
-            },
-            "feels_like": {
-                "night": -1,
-                "morn": -5,
-                "day": 0,
-                "eve": 1
-            },
-            "pressure": 988.42,
-            "humidity": 79.0,
-            "wind_speed": 2.61,
-            "precip_prob": 0,
-            "condition": "Переменная облачность"
-        },
-        {
             "date": "2024-01-05",
             "temp": {
-                "night": 1,
-                "morn": 0,
-                "day": 2,
-                "eve": 2,
-                "min": 0,
-                "max": 3
-            },
-            "feels_like": {
-                "night": -2,
-                "morn": -4,
-                "day": -1,
-                "eve": 0
-            },
-            "pressure": 981.25,
-            "humidity": 86.5,
-            "wind_speed": 2.86,
-            "precip_prob": 56,
-            "condition": "Сплошная облачность, мокрый снег"
-        },
-        {
-            "date": "2024-01-06",
-            "temp": {
                 "night": 0,
-                "morn": -1,
-                "day": 3,
-                "eve": 3,
-                "min": -1,
-                "max": 3
-            },
-            "feels_like": {
-                "night": 0,
-                "morn": -3,
-                "day": 1,
-                "eve": 1
-            },
-            "pressure": 977.09,
-            "humidity": 92.0,
-            "wind_speed": 1.72,
-            "precip_prob": 20,
-            "condition": "Сплошная облачность, мелкий мокрый снег"
-        },
-        {
-            "date": "2024-01-07",
-            "temp": {
-                "night": 0,
-                "morn": -4,
-                "day": 5,
-                "eve": 7,
-                "min": -4,
-                "max": 7
-            },
-            "feels_like": {
-                "night": -4,
-                "morn": -7,
-                "day": 3,
-                "eve": 3
-            },
-            "pressure": 978.09,
-            "humidity": 75.25,
-            "wind_speed": 3.4,
-            "precip_prob": 3,
-            "condition": "Облачно с прояснениями"
-        },
-        {
-            "date": "2024-01-08",
-            "temp": {
-                "night": 5,
                 "morn": 4,
-                "day": 6,
-                "eve": 4,
-                "min": 4,
-                "max": 6
-            },
-            "feels_like": {
-                "night": 1,
-                "morn": -1,
-                "day": 2,
-                "eve": 1
-            },
-            "pressure": 970.76,
-            "humidity": 80.75,
-            "wind_speed": 5.15,
-            "precip_prob": 71,
-            "condition": "Сплошная облачность, сильный дождь"
-        },
-        {
-            "date": "2024-01-09",
-            "temp": {
-                "night": 1,
-                "morn": 0,
                 "day": 1,
-                "eve": 0,
-                "min": 0,
-                "max": 1
-            },
-            "feels_like": {
-                "night": -3,
-                "morn": -7,
-                "day": -5,
-                "eve": -4
-            },
-            "pressure": 967.09,
-            "humidity": 87.0,
-            "wind_speed": 7.22,
-            "precip_prob": 42,
-            "condition": "Сплошная облачность, мокрый снег"
-        },
-        {
-            "date": "2024-01-10",
-            "temp": {
-                "night": -3,
-                "morn": -4,
-                "day": 4,
-                "eve": 2,
+                "eve": -4,
                 "min": -4,
                 "max": 4
             },
             "feels_like": {
-                "night": -7,
-                "morn": -9,
-                "day": 1,
+                "night": 0,
+                "morn": 1,
+                "day": -3,
+                "eve": -7
+            },
+            "pressure": 986.25,
+            "humidity": 88.62,
+            "wind_speed": 2.21,
+            "precip_prob": 2,
+            "condition": "Сплошная облачность, мелкий мокрый снег"
+        },
+        {
+            "date": "2024-01-06",
+            "temp": {
+                "night": -4,
+                "morn": -3,
+                "day": 2,
+                "eve": -1,
+                "min": -4,
+                "max": 2
+            },
+            "feels_like": {
+                "night": -4,
+                "morn": -6,
+                "day": -1,
                 "eve": -1
             },
-            "pressure": 969.76,
-            "humidity": 65.5,
-            "wind_speed": 3.25,
-            "precip_prob": 2,
-            "condition": "Ясно"
+            "pressure": 993.58,
+            "humidity": 81.25,
+            "wind_speed": 1.69,
+            "precip_prob": 26,
+            "condition": "Сплошная облачность, небольшой снег"
+        },
+        {
+            "date": "2024-01-07",
+            "temp": {
+                "night": -6,
+                "morn": -9,
+                "day": -8,
+                "eve": -10,
+                "min": -10,
+                "max": -6
+            },
+            "feels_like": {
+                "night": -10,
+                "morn": -15,
+                "day": -14,
+                "eve": -15
+            },
+            "pressure": 994.75,
+            "humidity": 73.5,
+            "wind_speed": 3.15,
+            "precip_prob": 44,
+            "condition": "Сплошная облачность, снег"
+        },
+        {
+            "date": "2024-01-08",
+            "temp": {
+                "night": -10,
+                "morn": -12,
+                "day": -11,
+                "eve": -12,
+                "min": -12,
+                "max": -10
+            },
+            "feels_like": {
+                "night": -16,
+                "morn": -19,
+                "day": -18,
+                "eve": -18
+            },
+            "pressure": 996.75,
+            "humidity": 77.25,
+            "wind_speed": 3.52,
+            "precip_prob": 63,
+            "condition": "Сплошная облачность, сильный снег"
+        },
+        {
+            "date": "2024-01-09",
+            "temp": {
+                "night": -12,
+                "morn": -13,
+                "day": -9,
+                "eve": -8,
+                "min": -13,
+                "max": -8
+            },
+            "feels_like": {
+                "night": -18,
+                "morn": -19,
+                "day": -14,
+                "eve": -11
+            },
+            "pressure": 1005.42,
+            "humidity": 79.25,
+            "wind_speed": 2.55,
+            "precip_prob": 6,
+            "condition": "Облачно с прояснениями"
+        },
+        {
+            "date": "2024-01-10",
+            "temp": {
+                "night": -6,
+                "morn": -5,
+                "day": 1,
+                "eve": -4,
+                "min": -6,
+                "max": 1
+            },
+            "feels_like": {
+                "night": -10,
+                "morn": -10,
+                "day": -3,
+                "eve": -6
+            },
+            "pressure": 1003.75,
+            "humidity": 86.0,
+            "wind_speed": 2.75,
+            "precip_prob": 41,
+            "condition": "Сплошная облачность, мелкий мокрый снег"
+        },
+        {
+            "date": "2024-01-11",
+            "temp": {
+                "night": -6,
+                "morn": -4,
+                "day": 1,
+                "eve": 1,
+                "min": -6,
+                "max": 1
+            },
+            "feels_like": {
+                "night": -9,
+                "morn": -9,
+                "day": -3,
+                "eve": -2
+            },
+            "pressure": 999.42,
+            "humidity": 90.75,
+            "wind_speed": 2.8,
+            "precip_prob": 60,
+            "condition": "Сплошная облачность, небольшой снег"
         }
     ]
 }

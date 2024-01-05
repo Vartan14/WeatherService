@@ -8,16 +8,16 @@ from flask_wrapper import FlaskAppWrapper
 from views.weather.weather_handler import WeatherHandler
 from views.login.login_handler import LoginHandler
 from views.api_key.api_key_handler import ApiKeyHandler
-from config import APP_SECRET_KEY
+from config import APP_SECRET_KEY, MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB
 
 # Flask app
 app_wrapper = FlaskAppWrapper(Flask(__name__))
 
 # Add configs
-app_wrapper.configs(MYSQL_HOST='localhost',
-                    MYSQL_USER='Vartan',
-                    MYSQL_PASSWORD='vartan2004',
-                    MYSQL_DB='weatherwizard',
+app_wrapper.configs(MYSQL_HOST=MYSQL_HOST,
+                    MYSQL_USER=MYSQL_USER,
+                    MYSQL_PASSWORD=MYSQL_PASSWORD,
+                    MYSQL_DB=MYSQL_DB,
                     SECRET_KEY=APP_SECRET_KEY)
 
 # Database
