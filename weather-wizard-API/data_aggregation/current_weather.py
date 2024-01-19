@@ -33,7 +33,7 @@ class CurrentWeather:
             "temp": self.__aggregate_prop(data, "temp", 2),  # temp in Celsius
             "feels_like": self.__aggregate_prop(data, "feels_like", 2),  # feels_like temp in Celsius
 
-            "pressure": self.__aggregate_prop(data, "pressure"),  # pressure in hPa
+            "pressure": round(self.__aggregate_prop(data, "pressure") / 1.33333),  # pressure in mm
             "humidity": self.__aggregate_prop(data, "humidity"),  # humidity in %
             "wind_speed": self.__aggregate_prop(data, "wind_speed", 2),  # wind speed in m/s
             "clouds": self.__aggregate_prop(data, "clouds"),  # clouds in %

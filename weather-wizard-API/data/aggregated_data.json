@@ -1,21 +1,21 @@
 {
     "location": {
-        "city": "Pushcha-Vodytsya",
+        "city": "Vinnytsia",
         "country_code": "UA",
-        "latitude": 50.4547,
-        "longitude": 30.5238
+        "latitude": 49.2167,
+        "longitude": 28.4333
     },
     "weather": {
-        "time": "16:49:02/16:00:00/17:00",
+        "time": "13:03:47/13:00:00/14:00",
         "condition": "Clouds",
-        "desc": "Broken clouds",
-        "icon": "04n",
-        "temp": -1.51,
-        "feels_like": -4.87,
-        "pressure": 1004,
-        "humidity": 80,
-        "wind_speed": 2.65,
-        "clouds": 73,
-        "precip_prob": 4
+        "desc": "Overcast clouds",
+        "icon": "04d",
+        "temp": 3.97,
+        "feels_like": 1.41,
+        "pressure": 689,
+        "humidity": 87,
+        "wind_speed": 2.96,
+        "clouds": 100,
+        "precip_prob": 2
     }
 }

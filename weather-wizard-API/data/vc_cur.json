@@ -1,18 +1,18 @@
 {
     "location": {
         "timezone_city": "Europe/Kiev",
-        "latitude": 50.45,
-        "longitude": 30.5236
+        "latitude": 49.2167,
+        "longitude": 28.4333
     },
     "weather": {
-        "time": "16:00:00",
+        "time": "13:00:00",
         "desc": "Overcast",
-        "temp": -0.4,
-        "feels_like": -4.7,
-        "pressure": 1010.0,
-        "humidity": 75.5,
-        "clouds": 94.2,
-        "wind_speed": 3.81,
+        "temp": 2.7,
+        "feels_like": 0.1,
+        "pressure": 1012.0,
+        "humidity": 84.2,
+        "clouds": 100.0,
+        "wind_speed": 2.5,
         "precip_prob": 0.0
     }
 }

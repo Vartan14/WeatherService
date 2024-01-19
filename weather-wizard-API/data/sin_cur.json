@@ -1,16 +1,16 @@
 {
     "location": {
-        "city": "Погода в Киеве",
-        "region": "Столица Украины"
+        "city": "Погода в Виннице",
+        "region": "Областной центр Винницкой области"
     },
     "weather": {
-        "time": "17:00",
-        "condition": "Облачно с прояснениями",
-        "temp": -2,
-        "feels_like": -6,
-        "pressure": 991.75,
-        "humidity": 78,
-        "wind_speed": 2.8,
-        "precip_prob": 9
+        "time": "14:00",
+        "condition": "Сплошная облачность",
+        "temp": 4,
+        "feels_like": 2,
+        "pressure": 736,
+        "humidity": 105.307,
+        "wind_speed": 2.4,
+        "precip_prob": 5
     }
 }

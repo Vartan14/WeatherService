@@ -45,7 +45,7 @@ class Forecast:
                 "icon": data[0]["weather_list"][i].get("icon"),
                 "temp": temp,
                 "feels_like": feels_like,
-                "pressure": self.__aggregate_prop(data, i, "pressure"),
+                "pressure": round(self.__aggregate_prop(data, i, "pressure") / 1.333),
                 "humidity": self.__aggregate_prop(data, i, "humidity"),
                 "wind_speed": self.__aggregate_prop(data, i, "wind_speed", 2),
                 "clouds": self.__aggregate_prop(data, i, "clouds"),

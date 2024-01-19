@@ -93,8 +93,8 @@ class SinoptikWebScraper:
             "condition": current_elements[1].find('div').get("title"),
             "temp": int(self.__strip_temp(current_elements[2].text)),
             "feels_like": int(self.__strip_temp(current_elements[3].text)),
-            "pressure": round(int(current_elements[4].text) * 1.333, 2),  # to hPa (millibars)
-            "humidity": int(current_elements[5].text),
+            "pressure": int(current_elements[4].text),
+            "humidity": round(int(current_elements[5].text) * 1.333, 4),
             "wind_speed": float(current_elements[6].text),
             "precip_prob": 0 if precip_prob == '-' else int(precip_prob)
         }
@@ -159,7 +159,7 @@ class SinoptikWebScraper:
                             "day": self.__strip_temp(data["день"][3]),
                             "eve": self.__strip_temp(data["вечер"][3]),
                         },
-                        "pressure": round(data.loc[4].astype(float).mean() * 1.333, 2),
+                        "pressure": round(round(data.loc[4].astype(float).mean(), 2) * 1.333, 4),
                         "humidity": round(data.loc[5].astype(float).mean(), 2),
                         "wind_speed": round(data.loc[6].astype(float).mean(), 2),
                         "precip_prob": round(np.mean([int(precip) if precip != '-' else 0 for precip in data.loc[7]]))
